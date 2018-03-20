@@ -1,0 +1,35 @@
+Install Unity 2017 3.1f
+**Give an overview of the unity windows
+
+Install SteamVR SDK
+**Need to install SteamVR Runtime from steam first
+**Need to have a Unity account in order to get it from the asset store
+**While Installing will state that you are using the old API, you can say I made a backup because we don't have to worry about this
+**Accept All for the settings window that shows up
+
+
+Change Unity Settings to support VR cameras
+
+Delete the Initial Main Camera in the scene
+
+Add the SteamVR Camera Rig found under prefabs folder
+
+
+Create two Child objects under each of the hand models
+**Sphere that will be the nearby trigger
+**We use the sphere in order to allow us to adjust the precision the player needs in order to interact with object
+**We remove the sphere renderer because we dont want to actually render the sphere when playing
+**Create an empty gameobject called holdPosition that will store the position where the picked up object will be
+**This object allows us to actually move the hold position relative to the hand/controller models
+
+Go into the Input manager in order to show developers the way that we setup input
+**Show them the button mapping website on unity reference website
+**Explain the difference between digital and analog input types
+**Create two button for the left and right joysticks
+
+Create a new Script now called Pickup for the Sphere Triggers
+**Explain onTriggerEnter and onTriggerExit functions (and other inherited functions)
+**Explain Update and Start
+**Create new Variables and show that they will be presented in unity as public
+
+Create some cubes and spheres and a new tag called "Pickupable"
